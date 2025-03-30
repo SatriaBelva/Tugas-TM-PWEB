@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0px;
+}
+.container {
+    max-width: 700px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 100px;
+    border: 1px solid #C8C8C8;
+
+}
+h6 {
+    text-align: left;
+    background-color: #DDDDDD;
+    margin: -20px -20px 20px -20px; /* Menghapus padding container dari h2 */
+    padding: 15px; /* Memberikan sedikit ruang di dalamnya */
+    color: rgb(2, 25, 50);
+    border-radius: 8px 8px 0 0; /* Agar sesuai dengan border container */
+    border-bottom: 1px solid #C8C8C8;
+}
+.required {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.form-group label {
+    font-weight: bold;
+    text-align: left;
+    font-size: small;
+}
+.form-group input, .form-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    
+}
+.form-group .radio-group {
+    display: flex;
+    gap: 20px;
+}
+.form-group .radio-group input {
+    width: 16px;
+    height: 16px;
+}
+.form-group .name-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.form-group .name-group input {
+    flex: 1;
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+button {
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type="submit"] {
+    background: #103342;
+    color: white;
+}
+button[type="reset"] {
+    background: #103342;
+    color: white;
+}
+
+/* ------------- */
+
+header {
+    background-color: #0A222D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Left Header */
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.left-header img {
+    height: 80px; 
+    width: auto; 
+    margin-right: 15px;
+}
+
+.left-header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+}
+
+.left-header-info h3,
+.left-header-info h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.left-header-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.left-header-info h5 {
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center; 
+    width: 100%; 
+}
+
+/* Right Header */
+.right-header {
+    display: flex;
+    align-items: center;
+    background-color: #103445;
+    padding: 1px 20px;
+    border-radius: 10px;
+    font-size: small;
+    gap: 15px; 
+}
+
+.right-header img {
+    height: 40px;
+    width: auto; 
+}
+
+/* ------- */
+
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 200px;
+    background-color: #0A222D;
+    display: flex;
+    color: white;
+}
+
+nav div img{
+    height: 20px; 
+    width: auto; 
+}
+
+nav div{
+    display: flex;
+    gap: 10px;
+}
