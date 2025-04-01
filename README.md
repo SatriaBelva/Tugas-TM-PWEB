@@ -12,4 +12,4 @@ Repository ini mencakup tugas-tugas kuliah yang berfokus pada pengembangan web, 
 
 **Monggo yang Mau Ngeclone**
 ```bash
-git clone https://github.com/username/repository-tugas-pweb-bejo-2025.git
+git clone https://github.com/SatriaBelva/Tugas-TM-PWEB.git
