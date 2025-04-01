@@ -62,15 +62,15 @@
         <form name="myForm" onsubmit="return validateForm()" method="POST" action="">
             <div class="form-group">
                 <label for="fakultas">Fakultas <span style="color: red;">*</span></label>
-                <select id="fakultas">
-                    <option>Pilih Fakultas</option>
+                <select id="fakultas" required>
+                    <option value="">Pilih Fakultas</option>
                 </select>
             </div>
             
             <div class="form-group">
                 <label for="prodi">Program Studi <span style="color: red;">*</span></label>
-                <select id="prodi">
-                    <option>Pilih Program Studi</option>
+                <select id="prodi" required>
+                    <option value="">Pilih Program Studi</option>
                 </select>
             </div>
 
@@ -116,11 +116,11 @@
             <div class="form-group">
                 <label for="tempatlahir">Tempat Lahir <span style="color: red;">*</span></label>
                 <div style="display: flex; gap: 10px;">
-                    <select id="provinsi">
-                        <option>Pilih Provinsi</option>
+                    <select id="provinsi" required>
+                        <option value="tes">Pilih Provinsi</option>
                     </select>
-                    <select id="kota">
-                        <option>Pilih Kabupaten/Kota</option>
+                    <select id="kota" required>
+                        <option value="tes">Pilih Kabupaten/Kota</option>
                     </select>
                 </div>
             </div>
@@ -135,8 +135,8 @@
 
             <div class="form-group">
                 <label for="status">Status Kepegawaian <span style="color: red;">*</span></label>
-                <select id="status">
-                    <option>Pilih Status Pegawai</option>
+                <select id="program_studi" required>
+                    <option value="">Pilih Status Pegawai</option>
                     <option>Pegawai Negeri Sipil (PNS)</option>
                     <option>Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)</option>
                     <option>Pekerja kontrak</option>   
@@ -145,16 +145,16 @@
 
             <div class="form-group">
                 <label for="program_studi">Ikatan Kerja<span style="color: red;">*</span></label>
-                <select id="program_studi">
-                    <option>Pilih Ikatan Kerja</option>
-                    <option>Jujur Gaero</option>
+                <select id="program_studi" required>
+                    <option value="">Pilih Ikatan Kerja</option>
+                    <option value="tes">Jujur Gaero</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="program_studi">Golongan/Pangkat <span style="color: red;">*</span></label>
-                <select id="program_studi">
-                    <option>Pilih Golongan/Pangkat</option>
+                <select id="program_studi" required>
+                    <option value="">Pilih Golongan/Pangkat</option>
                     <option>Penata Muda Tingkat I golongan ruang III/b</option>
                     <option>Penata golongan ruang III/c.</option>
                     <option>Penata Tingkat I golongan ruang III/d</option>
@@ -168,8 +168,8 @@
 
             <div class="form-group">
                 <label for="program_studi">Jabatan Akademik <span style="color: red;">*</span></label>
-                <select id="program_studi">
-                    <option>Pilih Jabatan Akademik</option>
+                <select id="program_studi" required>
+                    <option value="">Pilih Jabatan Akademik</option>
                     <option>Asisten Ahli</option>
                     <option>Lektor</option>
                     <option>Lektor Kepala</option>
@@ -179,8 +179,8 @@
 
             <div class="form-group">
                 <label for="program_studi">Pendidikan Terakhir <span style="color: red;">*</span></label>
-                <select id="program_studi">
-                    <option>Pilih Pendidikan Terakhir</option>
+                <select id="program_studi" required>
+                    <option value="">Pilih Pendidikan Terakhir</option>
                     <option>SMA</option>
                     <option>Sarjana</option>
                     <option>Magister</option>
@@ -190,8 +190,8 @@
 
             <div class="form-group">
                 <label for="program_studi">Status Kerja <span style="color: red;">*</span></label>
-                <select id="program_studi">
-                    <option>Pilih Status Kerja</option>
+                <select id="program_studi" required>
+                    <option value="" >Pilih Status Kerja</option>
                     <option>Dosen Tetap</option>
                     <option>Dosen Tidak Tetap</option>
                 </select>
@@ -203,10 +203,10 @@
             </div>
 
             <div class="form-group">
-                <label for="program_studi">Bidang Kepakaran</label>
+                <label for="program_studi">Bidang Kepakaran <span style="color: red;">*</span></label>
                 <div style="display: flex; gap: 10px;">
-                    <select id="program_studi">
-                        <option>Pilih...</option>
+                    <select id="program_studi" required>
+                        <option value="">Pilih...</option>
                         <option>Bidang Penelitian</option>
                         <option>Akuntansi Sektor Publik</option>
                         <option>Akuntansi Manajemen</option>
@@ -216,8 +216,8 @@
                         <option>Akuntansi Publik, Good Governance</option>
                         <option>Social Enterprise</option>
                     </select>
-                    <select id="program_studi">
-                        <option>Pilih...</option>
+                    <select id="program_studi" required>
+                        <option value="">Pilih...</option>
                         <option>Bidang Penelitian</option>
                         <option>Akuntansi Sektor Publik</option>
                         <option>Akuntansi Manajemen</option>
@@ -231,34 +231,34 @@
             </div>
 
             <div class="form-group">
-                <label>Akta Mengajar</label>
-                <div class="radio-group">
-                    <input type="radio" id="laki" name="gender" required> <label for="laki">Ya</label>
-                    <input type="radio" id="perempuan" name="gender"> <label for="perempuan">Tidak</label>
+                <label>Akta Mengajar </label>
+                <div class="radio-group-Mengajar">
+                    <input type="radio" id="Ya" name="Akta Mengajar"> <label for="Ya">Ya</label>
+                    <input type="radio" id="Tidak" name="Akta Mengajar"> <label for="Tidak">Tidak</label>
                 </div>
             </div>
 
             <div class="form-group">
                 <label>Ijin Mengajar</label>
-                <div class="radio-group">
-                    <input type="radio" id="laki" name="gender" required> <label for="laki">Ya</label>
-                    <input type="radio" id="perempuan" name="gender"> <label for="perempuan">Tidak</label>
+                <div class="radio-group-Mengajar">
+                    <input type="radio" id="Ya" name="Ijin Mengajar"> <label for="Ya">Ya</label>
+                    <input type="radio" id="Tidak" name="Ijin Mengajar"> <label for="Tidak">Tidak</label>
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="email">Kode Instansi Induk</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email">
             </div>
 
             <div class="form-group">
                 <label for="email">NIDN</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email">
             </div>
 
             <div class="form-group">
                 <label for="email">NO. SERTIFIKAT</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email">
             </div>
             
             <div class="button-group">

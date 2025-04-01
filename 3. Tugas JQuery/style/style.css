@@ -50,9 +50,19 @@ h6 {
 }
 .form-group .radio-group {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 .form-group .radio-group input {
+    width: 16px;
+    height: 16px;
+}
+.form-group .radio-group-Mengajar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.form-group .radio-group-Mengajar input {
     width: 16px;
     height: 16px;
 }
@@ -85,6 +95,10 @@ button[type="reset"] {
     background: #103342;
     color: white;
 }
+
+/* #program_studi{
+    border: 2px solid red;
+} */
 
 /* ------------- */
 

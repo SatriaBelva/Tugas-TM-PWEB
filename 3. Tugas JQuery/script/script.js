@@ -1,44 +1,69 @@
 function validateForm() {
     let isValid = true;
-    
-    $('select[required], input[required]').each(function () {
-        let $this = $(this);
-        
-        
-        if ($this.val() === '' || $this.val() === 'Pilih' || $this.val() === null) {
-            isValid = false;
-            $this.css('border', '1px solid red'); 
+    function validateRequiredElement(selector) {
+        const $element = $(selector);
+        if ($element.val() === '' || $element.val() === 'Pilih' || $element.val() === null) {
+            $element.css({
+                "border": "1px solid red",
+                "border-radius": "4px"
+            });
+            return false;
         } else {
-            $this.css('border', ''); 
+            $element.css({
+                "border": "",
+                "border-radius": ""
+            });
+            return true;
         }
+    }
+
+    $('select[required], input[required]').each(function () {
+        const isValidElement = validateRequiredElement(this);
+        if (!isValidElement) isValid = false;
     });
 
-    if (!$('input[name="gender"]:checked').val()) {
+    if (!validateRequiredElement("#program_studi")) {
         isValid = false;
-        $('input[name="gender"]').closest('.form-group').css('border', '1px solid red');
-    } else {
-        $('input[name="gender"]').closest('.form-group').css('border', '');
     }
 
-    let bidangIlmu = $('#program_studi').map(function() {
-        return $(this).val();
-    }).get();
-
-    if (bidangIlmu.includes('Pilih...')) {
+    if ($("#provinsi").val() === "tes" || $("#kota").val() === "tes") {
+        const $invalidField = $("#provinsi").val() === "tes" ? "#provinsi" : "#kota";
+        $( $invalidField ).css({
+            "border": "1px solid red",
+            "border-radius": "4px"
+        });
         isValid = false;
-        $('#program_studi').css('border', '1px solid red');
     } else {
-        $('#program_studi').css('border', '');
+        $("#provinsi, #kota").css({
+            "border": "",
+            "border-radius": ""
+        });
     }
 
-    
+    if (!validateRequiredElement("#fakultas")) {
+        isValid = false;
+    }
+
+    if (!$("input[name='gender']:checked").length) {
+        $(".radio-group").css({
+            "border": "1px solid red",
+            "border-radius": "4px",
+            "padding-top": "4px",
+            "padding-bottom": "4px"
+        });
+        isValid = false;
+    } else {
+        $(".radio-group").css("border", "");
+    }
+
     if (!isValid) {
         alert('Harap lengkapi semua form yang wajib diisi!');
         return false;
     }
 
-    return true; 
+    return true;
 }
+
 
 $(document).ready(function () {
     const dataWilayah = {
