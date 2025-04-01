@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascripts</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <img src="./assets/UNEJ.png" alt="">
+            <div class="left-header-info">
+                <h3 class="left-header-info-sister">SISTEM INFORMASI TERPADU (SISTER)</h3>
+                <h5 class="left-header-info-univ">UNIVERSITAS JEMBER</h5>
+            </div>
+        </div>
+        <div class="right-header">
+            <div>
+                <p>Nama : Umar Firjon Failani, S.T</p>
+                <p>Level : Operator Kepegawaian</p>
+                <p>Unit Kerja : </p>
+            </div>
+            <img src="./assets/out.png" alt="">
+        </div>
+    </header>
+    <nav>
+        <div>
+            <img src="./assets/Navbar/list.png" alt="">
+            <div>Biodata Pegawai</div>
+        </div>
+        <div>
+            <img src="./assets/Navbar/search.png" alt="">
+            <div>Pencarian</div>
+        </div>
+        <div>
+            <img src="./assets/Navbar/list.png" alt="">
+            <div>BKD</div>
+        </div>
+        <div>
+            <img src="./assets/Navbar/user.png" alt="">
+            <div>Jabatan Tambahan</div>
+        </div>
+        <div>
+            <img src="./assets/Navbar/home.png" alt="">
+            <div>Unit Kerja</div>
+        </div>
+        <div>
+            <img src="./assets/Navbar/list.png" alt="">
+            <div>Rekap Data</div>
+        </div>
+        <div>
+            <img src="./assets/Navbar/list.png" alt="">
+            <div>Gaji Berkala</div>
+        </div>
+    </nav>
+    <div class="container">
+        <h6>INSERT BIODATA DOSEN</h6>
+        <p class="required">Tanda (*) Wajib Diisi!</p>
+        <form name="myForm" onsubmit="return validateForm()" method="POST" action="">
+            <div class="form-group">
+                <label for="fakultas">Fakultas <span style="color: red;">*</span></label>
+                <select id="fakultas">
+                    <option>Pilih Fakultas</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="prodi">Program Studi <span style="color: red;">*</span></label>
+                <select id="prodi">
+                    <option>Pilih Program Studi</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Nama Dosen <span style="color: red;">*</span></label>
+                <div class="name-group">
+                    <input type="text" placeholder="Gelar Depan" required>
+                    <input type="text" placeholder="Nama" required>
+                    <input type="text" placeholder="Gelar Belakang" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="gelar">Gelar Tertinggi <span style="color: red;">*</span></label>
+                <input type="text" id="gelar" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="pt">Perguruan Tinggi Pemberi Gelar <span style="color: red;">*</span></label>
+                <input type="text" id="pt" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="nip">NIP <span style="color: red;">*</span></label>
+                <input type="text" id="nip" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ktp">Nomor KTP <span style="color: red;">*</span></label>
+                <input type="text" id="ktp" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="hp">Nomor HP <span style="color: red;">*</span></label>
+                <input type="text" id="hp" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email <span style="color: red;">*</span></label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tempatlahir">Tempat Lahir <span style="color: red;">*</span></label>
+                <div style="display: flex; gap: 10px;">
+                    <select id="provinsi">
+                        <option>Pilih Provinsi</option>
+                    </select>
+                    <select id="kota">
+                        <option>Pilih Kabupaten/Kota</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Kelamin <span style="color: red;">*</span></label>
+                <div class="radio-group">
+                    <input type="radio" id="laki" name="gender" required> <label for="laki">Laki-Laki</label>
+                    <input type="radio" id="perempuan" name="gender"> <label for="perempuan">Perempuan</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="status">Status Kepegawaian <span style="color: red;">*</span></label>
+                <select id="status">
+                    <option>Pilih Status Pegawai</option>
+                    <option>Pegawai Negeri Sipil (PNS)</option>
+                    <option>Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)</option>
+                    <option>Pekerja kontrak</option>   
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="program_studi">Ikatan Kerja<span style="color: red;">*</span></label>
+                <select id="program_studi">
+                    <option>Pilih Ikatan Kerja</option>
+                    <option>Jujur Gaero</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="program_studi">Golongan/Pangkat <span style="color: red;">*</span></label>
+                <select id="program_studi">
+                    <option>Pilih Golongan/Pangkat</option>
+                    <option>Penata Muda Tingkat I golongan ruang III/b</option>
+                    <option>Penata golongan ruang III/c.</option>
+                    <option>Penata Tingkat I golongan ruang III/d</option>
+                    <option>Pembina golongan ruang IV/a</option>
+                    <option>Pembina Tingkat I golongan ruang IV/b</option>
+                    <option>Pembina Utama Muda golongan ruang IV/c</option>
+                    <option>Pembina Utama Madya golongan ruang IV/d</option>
+                    <option>Pembina Utama golongan ruang IV/e</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="program_studi">Jabatan Akademik <span style="color: red;">*</span></label>
+                <select id="program_studi">
+                    <option>Pilih Jabatan Akademik</option>
+                    <option>Asisten Ahli</option>
+                    <option>Lektor</option>
+                    <option>Lektor Kepala</option>
+                    <option>Guru Besar atau Profesor</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="program_studi">Pendidikan Terakhir <span style="color: red;">*</span></label>
+                <select id="program_studi">
+                    <option>Pilih Pendidikan Terakhir</option>
+                    <option>SMA</option>
+                    <option>Sarjana</option>
+                    <option>Magister</option>
+                    <option>Doktor</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="program_studi">Status Kerja <span style="color: red;">*</span></label>
+                <select id="program_studi">
+                    <option>Pilih Status Kerja</option>
+                    <option>Dosen Tetap</option>
+                    <option>Dosen Tidak Tetap</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Bidang Ilmu <span style="color: red;">*</span></label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="program_studi">Bidang Kepakaran</label>
+                <div style="display: flex; gap: 10px;">
+                    <select id="program_studi">
+                        <option>Pilih...</option>
+                        <option>Bidang Penelitian</option>
+                        <option>Akuntansi Sektor Publik</option>
+                        <option>Akuntansi Manajemen</option>
+                        <option>Akuntansi keuangan</option>
+                        <option>Manajemen Strategik</option>
+                        <option>Akuntansi Publik, Good Governance</option>
+                        <option>Akuntansi Publik, Good Governance</option>
+                        <option>Social Enterprise</option>
+                    </select>
+                    <select id="program_studi">
+                        <option>Pilih...</option>
+                        <option>Bidang Penelitian</option>
+                        <option>Akuntansi Sektor Publik</option>
+                        <option>Akuntansi Manajemen</option>
+                        <option>Akuntansi keuangan</option>
+                        <option>Manajemen Strategik</option>
+                        <option>Akuntansi Publik, Good Governance</option>
+                        <option>Akuntansi Publik, Good Governance</option>
+                        <option>Social Enterprise</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Akta Mengajar</label>
+                <div class="radio-group">
+                    <input type="radio" id="laki" name="gender" required> <label for="laki">Ya</label>
+                    <input type="radio" id="perempuan" name="gender"> <label for="perempuan">Tidak</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Ijin Mengajar</label>
+                <div class="radio-group">
+                    <input type="radio" id="laki" name="gender" required> <label for="laki">Ya</label>
+                    <input type="radio" id="perempuan" name="gender"> <label for="perempuan">Tidak</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Kode Instansi Induk</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">NIDN</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">NO. SERTIFIKAT</label>
+                <input type="email" id="email" required>
+            </div>
+            
+            <div class="button-group">
+                <button type="submit" onclick="validateForm()" class="btnSubmit">Simpan</button>
+                <button type="reset">Kembali</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
