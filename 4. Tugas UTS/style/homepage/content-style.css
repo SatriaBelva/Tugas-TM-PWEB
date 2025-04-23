@@ -1,0 +1,116 @@
+.body {
+    display: flex;
+    justify-content: center;
+    background-color: #F3F6F9;
+    font-family: Poppins;
+    padding: 30px;
+}
+
+.content {
+    width: 1055px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Baris untuk 2 elemen berjajar */
+.banner-row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Kampus Merdeka */
+.kampus-merdeka {
+    flex: 0 0 70%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.kampus-merdeka img {
+    width: 167px;
+    height: auto;
+    object-fit: contain;
+}
+
+.kampus-merdeka-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.kampus-merdeka-text {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+.kampus-merdeka-button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.kampus-merdeka-button a {
+    display: inline-flex;
+    background-color: yellow;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(24, 28, 50);
+    padding: 11px 20px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kampus-merdeka-button a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* PDDIKTI */
+.pddikti {
+    flex: 0 0 30%;
+    background-color: #E8FFF3;
+    border: 2px dashed #50CD89;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.pddikti img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.pddikti-title {
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.pddikti-text1 {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.pddikti-text2 {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.pddikti-link {
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(0, 158, 247);
+    font-weight: 700;
+    font-size: 13px;
+}
