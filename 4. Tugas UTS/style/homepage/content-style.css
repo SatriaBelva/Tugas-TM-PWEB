@@ -7,9 +7,10 @@
 }
 
 .content {
-    width: 1055px;
+    width: 1255px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Ini yang penting */
+    /* background-color: fuchsia   ; */
 }
 
 /* Baris untuk 2 elemen berjajar */
@@ -24,7 +25,7 @@
     flex: 0 0 70%;
     background-color: white;
     border-radius: 12px;
-    padding: 20px;
+    padding: 0px 20px;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -67,7 +68,7 @@
 }
 
 .kampus-merdeka-button a:hover {
-    transform: translateY(-3px) scale(1.05);
+    transform: translateY(-3px) scale(10);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -77,7 +78,7 @@
     background-color: #E8FFF3;
     border: 2px dashed #50CD89;
     border-radius: 12px;
-    padding: 20px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
     text-align: center;

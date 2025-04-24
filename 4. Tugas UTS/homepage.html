@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/homepage/homepage-style.css">
     <link rel="stylesheet" href="style/homepage/content-style.css">
+    <link rel="stylesheet" href="style/homepage/app-style.css">
+    <link rel="stylesheet" href="style/homepage/calendar-style.css">
     <title>Document</title>
 </head>
 <body style="margin: 0;">
@@ -65,35 +67,126 @@
 
    <!-- CONTENT -->
    <div class="body">
-    <div class="content">
-        <div class="banner-row">
-            <!-- Kampus Merdeka -->
-            <div class="kampus-merdeka">
-                <img src="assets/Banner/kampus merdeka.png" alt="">
-                <div>
-                    <div class="kampus-merdeka-title">Daftarkan Keikutsertaan MBKM Kamu</div>
-                    <div class="kampus-merdeka-text">
-                        Supaya kegiatan pembelajaran Kampus Merdeka kamu dapat dikonversi ke Mata kuliah.
-                        Untuk membaca pedoman MBKM klik disini
+        <div class="content">
+            <!-- Banner -->
+            <div class="banner-row">
+                <div class="kampus-merdeka">
+                    <img src="assets/Banner/kampus merdeka.png" alt="">
+                    <div>
+                        <div class="kampus-merdeka-title">Daftarkan Keikutsertaan MBKM Kamu</div>
+                        <div class="kampus-merdeka-text">
+                            Supaya kegiatan pembelajaran Kampus Merdeka kamu dapat dikonversi ke Mata kuliah.
+                            Untuk membaca pedoman MBKM klik disini
+                        </div>
+                        <div class="kampus-merdeka-button">
+                            <a href="">DAFTAR KAMPUS MERDEKA</a>
+                            <a href="">DAFTAR KAMPUS MERDEKA PERTUKARAN PELAJAR</a>
+                        </div>
                     </div>
-                    <div class="kampus-merdeka-button">
-                        <a href="">DAFTAR KAMPUS MERDEKA</a>
-                        <a href="">DAFTAR KAMPUS MERDEKA PERTUKARAN PELAJAR</a>
+                </div>
+                <div class="pddikti">
+                    <img src="assets/Banner/pddikti.png" alt="">
+                    <div class="pddikti-title">INFORMASI DATA PDDIKTI</div>
+                    <div class="pddikti-text1">Data kamu sudah ada di PDDIKTI</div>
+                    <div class="pddikti-text2">Informasi detail klik link di bawah ini</div>
+                    <a class="pddikti-link" href="https://pddikti.kemdiktisaintek.go.id/" target="_blank">DATA PDDIKTI</a>
+                </div>
+            </div>
+
+            <!-- App -->
+            <div class="app-container">
+                <div class="app-container-dashboard">
+                    <div class="app-container-dashboard-title">
+                        Dashboard
+                        <span>TA 2024/2025 Genap</span>
+                    </div>
+                    <div class="dashboard-grid">
+                        <div class="app-container-dashboard-menu-1">
+                            <div class="app-container-dashboard-menu-icon">
+                                <img src="assets/App/run.png" alt="">
+                            </div>
+                            <div class="app-container-dashboard-menu-title">SKS Tempuh</div>
+                            <div class="app-container-dashboard-menu-value">23</div>
+                        </div>
+                        <div class="app-container-dashboard-menu-2">
+                            <div class="app-container-dashboard-menu-icon">
+                                <img src="assets/App/stars.png" alt="">
+                            </div>
+                            <div class="app-container-dashboard-menu-title">IP</div>
+                            <div class="app-container-dashboard-menu-value">0</div>
+                        </div>
+                        <div class="app-container-dashboard-menu-3">
+                            <div class="app-container-dashboard-menu-icon">
+                                <img src="assets/App/flag.png" alt="">
+                            </div>
+                            <div class="app-container-dashboard-menu-title">SKS Total</div>
+                            <div class="app-container-dashboard-menu-value">137</div>
+                        </div>
+                        <div class="app-container-dashboard-menu-4">
+                            <div class="app-container-dashboard-menu-icon">
+                                <img src="assets/App/graduate.png" alt="">
+                            </div>
+                            <div class="app-container-dashboard-menu-title">IPK</div>
+                            <div class="app-container-dashboard-menu-value">4.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-container-menu">
+                    <div class="app-container-dashboard-title">Menu</div>
+                    <div class="menu-grid">
+                        <div class="menu-grid-top">
+                            <div class="app-container-menu-menus">
+                                <div class="app-container-menu-icon">
+                                    <img src="assets/App/profil.png" alt="">
+                                </div>
+                                <div class="app-container-menu-title">Profil</div>
+                            </div>
+                            <div class="app-container-menu-menus">
+                                <div class="app-container-menu-icon">
+                                    <img src="assets/App/persiapan_perkuliahan.png" alt="">
+                                </div>
+                                <div class="app-container-menu-title">Persiapan Kuliah</div>
+                            </div>
+                            <div class="app-container-menu-menus">
+                                <div class="app-container-menu-icon">
+                                    <img src="assets/App/perkuliahan.png" alt="">
+                                </div>
+                                <div class="app-container-menu-title">Perkuliahan</div>
+                            </div>
+                            <div class="app-container-menu-menus">
+                                <div class="app-container-menu-icon">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="app-container-menu-title">E-Office</div>
+                            </div>
+                        </div>
+                        <div class="menu-grid-bottom">
+                            <div class="app-container-menu-menus-bottom">
+                                <div class="app-container-menu-icon">
+                                    <img src="assets/App/kegiatan.png" alt="">
+                                </div>
+                                <div class="app-container-menu-title">Kegiatan</div>
+                            </div>
+                            <div class="app-container-menu-menus-bottom">
+                                <div class="app-container-menu-icon">
+                                    <img src="assets/App/layanan.png" alt="">
+                                </div>
+                                <div class="app-container-menu-title">Layanan</div>
+                            </div>
+                            <div class="app-container-menu-menus-bottom">
+                                <div class="app-container-menu-icon">
+                                    <img src="assets/App/hasil_studi.png" alt="">
+                                </div>
+                                <div class="app-container-menu-title">Hasil Studi</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PDDIKTI -->
-            <div class="pddikti">
-                <img src="assets/Banner/pddikti.png" alt="">
-                <div class="pddikti-title">INFORMASI DATA PDDIKTI</div>
-                <div class="pddikti-text1">Data kamu sudah ada di PDDIKTI</div>
-                <div class="pddikti-text2">Informasi detail klik link di bawah ini</div>
-                <a class="pddikti-link" href="https://pddikti.kemdiktisaintek.go.id/" target="_blank">DATA PDDIKTI</a>
-            </div>
-            </div>
+            <!-- Kalender Akademik -->
+
         </div>
     </div>
-
 </body>
 </html>
