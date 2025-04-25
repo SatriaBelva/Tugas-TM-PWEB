@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/homepage/homepage-style.css">
+    <link rel="stylesheet" href="style\template\footer-style.css">
+    <link rel="stylesheet" href="style/template/navbar-style.css">
     <link rel="stylesheet" href="style/homepage/content-style.css">
     <link rel="stylesheet" href="style/homepage/app-style.css">
     <link rel="stylesheet" href="style/homepage/calendar-style.css">
@@ -70,113 +71,133 @@
    <div class="body">
         <div class="content">
             <!-- Banner -->
-            <div class="banner-row">
-                <div class="kampus-merdeka">
-                    <img src="assets/Banner/kampus merdeka.png" alt="">
-                    <div>
-                        <div class="kampus-merdeka-title">Daftarkan Keikutsertaan MBKM Kamu</div>
-                        <div class="kampus-merdeka-text">
-                            Supaya kegiatan pembelajaran Kampus Merdeka kamu dapat dikonversi ke Mata kuliah.
-                            Untuk membaca pedoman MBKM klik disini
-                        </div>
-                        <div class="kampus-merdeka-button">
-                            <a href="">DAFTAR KAMPUS MERDEKA</a>
-                            <a href="">DAFTAR KAMPUS MERDEKA PERTUKARAN PELAJAR</a>
+            <div class="testing">
+                <div class="banner-row">
+                    <div class="kampus-merdeka">
+                        <img src="assets/Banner/kampus merdeka.png" alt="">
+                        <div>
+                            <div class="kampus-merdeka-title">Daftarkan Keikutsertaan MBKM Kamu</div>
+                            <div class="kampus-merdeka-text">
+                                Supaya kegiatan pembelajaran Kampus Merdeka kamu dapat dikonversi ke Mata kuliah.
+                                Untuk membaca pedoman MBKM klik disini
+                            </div>
+                            <div class="kampus-merdeka-button">
+                                <a href="https://kampusmerdeka.kemdikbud.go.id/" target="_blank">DAFTAR KAMPUS MERDEKA</a>
+                                <a href="https://kampusmerdeka.kemdikbud.go.id/" target="_blank">DAFTAR KAMPUS MERDEKA PERTUKARAN PELAJAR</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="pddikti">
-                    <img src="assets/Banner/pddikti.png" alt="">
-                    <div class="pddikti-title">INFORMASI DATA PDDIKTI</div>
-                    <div class="pddikti-text1">Data kamu sudah ada di PDDIKTI</div>
-                    <div class="pddikti-text2">Informasi detail klik link di bawah ini</div>
-                    <a class="pddikti-link" href="https://pddikti.kemdiktisaintek.go.id/" target="_blank">DATA PDDIKTI</a>
+                    <div class="pddikti">
+                        <img src="assets/Banner/pddikti.png" alt="">
+                        <div class="pddikti-title">INFORMASI DATA PDDIKTI</div>
+                        <div class="pddikti-text1">Data kamu sudah ada di PDDIKTI</div>
+                        <div class="pddikti-text2">Informasi detail klik link di bawah ini</div>
+                        <a class="pddikti-link" href="https://pddikti.kemdiktisaintek.go.id/" target="_blank">DATA PDDIKTI</a>
+                    </div>
                 </div>
             </div>
 
             <!-- App -->
             <div class="app-container">
+                <!-- Dashboard Section -->
                 <div class="app-container-dashboard">
                     <div class="app-container-dashboard-title">
                         Dashboard
                         <span>TA 2024/2025 Genap</span>
                     </div>
                     <div class="dashboard-grid">
-                        <div class="app-container-dashboard-menu-1">
+                        <!-- Dashboard Card: SKS Tempuh -->
+                        <div class="dashboard-menu-card app-container-dashboard-menu-1">
                             <div class="app-container-dashboard-menu-icon">
-                                <img src="assets/App/run.png" alt="">
+                                <img src="assets/App/run.png" alt="SKS Tempuh">
                             </div>
                             <div class="app-container-dashboard-menu-title">SKS Tempuh</div>
                             <div class="app-container-dashboard-menu-value">23</div>
                         </div>
-                        <div class="app-container-dashboard-menu-2">
+            
+                        <!-- Dashboard Card: IP -->
+                        <div class="dashboard-menu-card app-container-dashboard-menu-2">
                             <div class="app-container-dashboard-menu-icon">
-                                <img src="assets/App/stars.png" alt="">
+                                <img src="assets/App/stars.png" alt="IP">
                             </div>
                             <div class="app-container-dashboard-menu-title">IP</div>
                             <div class="app-container-dashboard-menu-value">0</div>
                         </div>
-                        <div class="app-container-dashboard-menu-3">
+            
+                        <!-- Dashboard Card: SKS Total -->
+                        <div class="dashboard-menu-card app-container-dashboard-menu-3">
                             <div class="app-container-dashboard-menu-icon">
-                                <img src="assets/App/flag.png" alt="">
+                                <img src="assets/App/flag.png" alt="SKS Total">
                             </div>
                             <div class="app-container-dashboard-menu-title">SKS Total</div>
                             <div class="app-container-dashboard-menu-value">137</div>
                         </div>
-                        <div class="app-container-dashboard-menu-4">
+            
+                        <!-- Dashboard Card: IPK -->
+                        <div class="dashboard-menu-card app-container-dashboard-menu-4">
                             <div class="app-container-dashboard-menu-icon">
-                                <img src="assets/App/graduate.png" alt="">
+                                <img src="assets/App/graduate.png" alt="IPK">
                             </div>
                             <div class="app-container-dashboard-menu-title">IPK</div>
                             <div class="app-container-dashboard-menu-value">4.00</div>
                         </div>
                     </div>
                 </div>
+            
+                <!-- Menu Section -->
                 <div class="app-container-menu">
                     <div class="app-container-dashboard-title">Menu</div>
                     <div class="menu-grid">
                         <div class="menu-grid-top">
+                            <!-- Menu Top Items -->
                             <div class="app-container-menu-menus">
                                 <div class="app-container-menu-icon">
-                                    <img src="assets/App/profil.png" alt="">
+                                    <img src="assets/App/profil.png" alt="Profil">
                                 </div>
                                 <div class="app-container-menu-title">Profil</div>
                             </div>
+            
                             <div class="app-container-menu-menus">
                                 <div class="app-container-menu-icon">
-                                    <img src="assets/App/persiapan_perkuliahan.png" alt="">
+                                    <img src="assets/App/persiapan_perkuliahan.png" alt="Persiapan Kuliah">
                                 </div>
                                 <div class="app-container-menu-title">Persiapan Kuliah</div>
                             </div>
+            
                             <div class="app-container-menu-menus">
                                 <div class="app-container-menu-icon">
-                                    <img src="assets/App/perkuliahan.png" alt="">
+                                    <img src="assets/App/perkuliahan.png" alt="Perkuliahan">
                                 </div>
                                 <div class="app-container-menu-title">Perkuliahan</div>
                             </div>
+            
                             <div class="app-container-menu-menus">
                                 <div class="app-container-menu-icon">
-                                    <img src="" alt="">
+                                    <img src="assets/App/eoffice.png" alt="">
                                 </div>
                                 <div class="app-container-menu-title">E-Office</div>
                             </div>
                         </div>
+            
                         <div class="menu-grid-bottom">
+                            <!-- Menu Bottom Items -->
                             <div class="app-container-menu-menus-bottom">
                                 <div class="app-container-menu-icon">
-                                    <img src="assets/App/kegiatan.png" alt="">
+                                    <img src="assets/App/kegiatan.png" alt="Kegiatan">
                                 </div>
                                 <div class="app-container-menu-title">Kegiatan</div>
                             </div>
+            
                             <div class="app-container-menu-menus-bottom">
                                 <div class="app-container-menu-icon">
-                                    <img src="assets/App/layanan.png" alt="">
+                                    <img src="assets/App/layanan.png" alt="Layanan">
                                 </div>
                                 <div class="app-container-menu-title">Layanan</div>
                             </div>
+            
                             <div class="app-container-menu-menus-bottom">
                                 <div class="app-container-menu-icon">
-                                    <img src="assets/App/hasil_studi.png" alt="">
+                                    <img src="assets/App/hasil_studi.png" alt="Hasil Studi">
                                 </div>
                                 <div class="app-container-menu-title">Hasil Studi</div>
                             </div>
@@ -184,7 +205,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <!-- Kalender Akademik -->
             <h3>Kalender Akademik Tahun Akademik 2024/2025 Genap</h3>
             <div class="calendar-container">
@@ -384,12 +405,12 @@
             <div class="footer">
                 <div>
                     <span class="tahun">2022©</span>
-                    <a href="instagram.com/uptti_unej" target="_blank" class="upttik">UPTTIK</a>
+                    <a href="https://www.instagram.com/uptti_unej/" target="_blank" class="upttik">UPTTIK</a>
                 </div>
                 <div class="footer-right">
-                    <a href="">Policy</a>
-                    <a href="">Terms & Condition</a>
-                    <a href="">Wiki</a>
+                    <a class="footer-right-link" href="https://www.instagram.com/uptti_unej/" target="_blank">Policy</a>
+                    <a class="footer-right-link" href="https://www.instagram.com/uptti_unej/" target="_blank">Terms & Condition</a>
+                    <a class="footer-right-link" href="https://www.instagram.com/uptti_unej/" target="_blank">Wiki</a>
                 </div>
             </div>
         </div>

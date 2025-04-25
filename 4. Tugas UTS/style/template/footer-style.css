@@ -1,0 +1,43 @@
+.footer{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tahun{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(181, 181, 195);
+}
+
+.upttik{
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(63, 66, 84);
+}
+
+.footer-right{
+    width: 230px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.upttik:hover{
+    color: blue;
+}
+
+.footer-right-link {
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(94, 98, 120);
+    transition: color 0.2s ease;
+}
+
+.footer-right-link:hover {
+    color: blue;
+}

@@ -1,0 +1,44 @@
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 48, 66);
+    height: 65px;
+}
+
+.navigation-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* background-color: red; */
+}
+
+.navigation-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(237, 237, 237);
+    gap: 10px;
+}
+
+.navigation-img-container{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-img-container img{
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
+
+.navigation-title{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Poppins;
+}

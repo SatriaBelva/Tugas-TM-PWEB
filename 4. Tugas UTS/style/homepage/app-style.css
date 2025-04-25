@@ -1,4 +1,5 @@
-.app-container{
+/* Container Layout */
+.app-container {
     display: grid;
     grid-template-columns: 30% auto;
     height: auto;
@@ -6,205 +7,117 @@
     margin-top: 30px;
 }
 
-.app-container-dashboard{
+.app-container-dashboard {
     display: flex;
     flex-direction: column;
     color: white;
 }
 
-.dashboard-grid{
+.dashboard-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px; /* biar gak dempet */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
 }
 
-.app-container-dashboard-title{
+.app-container-dashboard-title {
     font-size: 23px;
     font-weight: 700;
     color: rgb(24, 28, 50);
     margin-bottom: 20px;
-    
 }
 
-.app-container-dashboard-title span{
+.app-container-dashboard-title span {
     font-size: 10px;
     font-weight: 500;
     color: white;
-    margin-bottom: 20px;
     background-color: #009EF7;
     padding: 2px 8px;
     border-radius: 5px;
-    margin-left: 3PX;
+    margin-left: 3px;
 }
 
-/* Dashboard 1 */
-.app-container-dashboard-menu-1{
-    background-color: #4AB58E;
+/* Dashboard Menu Card Styles */
+.dashboard-menu-card {
     padding: 29px 32px;
     display: flex;
     flex-direction: column;
     border-radius: 12px;
+    color: white;
 }
 
-.app-container-dashboard-menu-1 .app-container-dashboard-menu-icon{
+.dashboard-menu-card .app-container-dashboard-menu-icon {
     height: 39px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
 }
 
-.app-container-dashboard-menu-1 .app-container-dashboard-menu-icon img{
+.dashboard-menu-card .app-container-dashboard-menu-icon img {
     width: auto;
     height: 100%;
     object-fit: contain;
 }
 
-.app-container-dashboard-menu-1 .app-container-dashboard-menu-title{
+.dashboard-menu-card .app-container-dashboard-menu-title {
     font-size: 14px;
     font-weight: 600;
     margin-top: 16px;
 }
 
-.app-container-dashboard-menu-1 .app-container-dashboard-menu-value{
+.dashboard-menu-card .app-container-dashboard-menu-value {
     font-size: 22px;
     font-weight: 700;
 }
 
-/* Dashboard 2 */
-.app-container-dashboard-menu-2{
-    background-color: #009EF7;
-    padding: 29px 32px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 12px;
-}
+/* Specific Dashboard Menu Colors */
+.app-container-dashboard-menu-1 { background-color: #4AB58E; }
+.app-container-dashboard-menu-2 { background-color: #009EF7; }
+.app-container-dashboard-menu-3 { background-color: #FFC700; }
+.app-container-dashboard-menu-4 { background-color: #F1416C; }
 
-.app-container-dashboard-menu-2 .app-container-dashboard-menu-icon{
-    height: 39px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.app-container-dashboard-menu-2 .app-container-dashboard-menu-icon img{
-    width: auto;
-    height: 100%;
-    object-fit: contain;
-}
-
-.app-container-dashboard-menu-2 .app-container-dashboard-menu-title{
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 16px;
-}
-
-.app-container-dashboard-menu-2 .app-container-dashboard-menu-value{
-    font-size: 22px;
-    font-weight: 700;
-}
-
-/* Dashboard 3 */
-.app-container-dashboard-menu-3{
-    background-color: #FFC700;
-    padding: 29px 32px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 12px;
-}
-
-.app-container-dashboard-menu-3 .app-container-dashboard-menu-icon{
-    height: 39px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.app-container-dashboard-menu-3 .app-container-dashboard-menu-icon img{
-    width: auto;
-    height: 100%;
-    object-fit: contain;
-}
-
-.app-container-dashboard-menu-3 .app-container-dashboard-menu-title{
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 16px;
-}
-
-.app-container-dashboard-menu-3 .app-container-dashboard-menu-value{
-    font-size: 22px;
-    font-weight: 700;
-}
-
-/* Dashboard 4 */
-.app-container-dashboard-menu-4{
-    background-color: #F1416C;
-    padding: 29px 32px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 12px;
-}
-
-.app-container-dashboard-menu-4 .app-container-dashboard-menu-icon{
-    height: 39px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.app-container-dashboard-menu-4 .app-container-dashboard-menu-icon img{
-    width: auto;
-    height: 100%;
-    object-fit: contain;
-}
-
-.app-container-dashboard-menu-4 .app-container-dashboard-menu-title{
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 16px;
-}
-
-.app-container-dashboard-menu-4 .app-container-dashboard-menu-value{
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.app-container-menu{
+/* Menu Container */
+.app-container-menu {
     display: flex;
     flex-direction: column;
 }
 
-.menu-grid{
+.menu-grid {
     display: flex;
     flex-direction: column;
 }
 
-.menu-grid-top{
+.menu-grid-top {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 8px;
 }
 
-.menu-grid-bottom{
+.menu-grid-bottom {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 22px;
     margin-top: 16px;
 }
 
-.app-container-menu-menus{
+/* Menu Card */
+.app-container-menu-menus,
+.app-container-menu-menus-bottom {
     background-color: white;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 8.125px;
-    /* padding-right: 15px; */
+    padding: 40px 0 40px 8.125px;
     border-radius: 12px;
+}
+
+.app-container-menu-menus {
     width: 187px;
 }
 
-/* TOP */
-.app-container-menu-icon{
+.app-container-menu-menus-bottom {
+    width: auto;
+}
+
+/* Menu Top Icon and Title */
+.app-container-menu-icon {
     height: 33px;
     width: 140px;
     display: flex;
@@ -213,27 +126,16 @@
     margin-bottom: 15px;
 }
 
-.app-container-menu-icon img{
+.app-container-menu-icon img {
     width: auto;
     height: 100%;
     object-fit: contain;
 }
 
-.app-container-menu-title{
+.app-container-menu-title {
     padding-left: 25px;
     width: 140px;
     font-size: 19px;
     font-weight: 500;
     color: rgb(63, 66, 84);
-}
-
-/* BOTTOM */
-.app-container-menu-menus-bottom{
-    background-color: white;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 8.125px;
-    /* padding-right: 15px; */
-    border-radius: 12px;
-    width: auto;
 }

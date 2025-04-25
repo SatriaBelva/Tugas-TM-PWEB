@@ -1,46 +1,41 @@
-.body {
-    display: flex;
-    justify-content: center;
-    background-color: #F3F6F9;
-    font-family: Poppins;
-    padding: 30px;
+.testing{
+    width: 1220px ;
 }
 
-.content {
-    width: 1255px;
-    display: flex;
-    flex-direction: column; /* Ini yang penting */
-    /* background-color: fuchsia   ; */
-}
-
-/* Baris untuk 2 elemen berjajar */
 .banner-row {
     display: flex;
     gap: 20px;
     width: 100%;
 }
 
-/* Kampus Merdeka */
-.kampus-merdeka {
-    flex: 0 0 70%;
-    background-color: white;
+.kampus-merdeka,
+.pddikti {
     border-radius: 12px;
-    padding: 0px 20px;
     display: flex;
-    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.kampus-merdeka {
+    flex: 0 0 75%;
+    background-color: #fff;
     align-items: center;
+    gap: 20px;
 }
 
 .kampus-merdeka img {
     width: 167px;
-    height: auto;
     object-fit: contain;
 }
 
-.kampus-merdeka-title {
-    font-size: 17px;
+.kampus-merdeka-title,
+.pddikti-title {
+    font-size: 15px;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
+    margin-top: -15px;
+    color: rgb(24, 28, 50);
 }
 
 .kampus-merdeka-text {
@@ -61,57 +56,53 @@
     font-size: 12px;
     font-weight: 600;
     text-decoration: none;
-    color: rgb(24, 28, 50);
+    color: #181C32;
     padding: 11px 20px;
     border-radius: 12px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .kampus-merdeka-button a:hover {
-    transform: translateY(-3px) scale(10);
+    transform: translateY(-3px) scale(1.02);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* PDDIKTI */
 .pddikti {
-    flex: 0 0 30%;
     background-color: #E8FFF3;
     border: 2px dashed #50CD89;
-    border-radius: 12px;
-    padding: 20px 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
+    padding-top: 0;
+    width: 100%;
 }
 
 .pddikti img {
-    width: 200px;
-    height: auto;
+    width: 150px;
     object-fit: contain;
 }
 
-.pddikti-title {
-    font-weight: 700;
-    font-size: 17px;
-    margin-bottom: 6px;
+.pddikti-text1,
+.pddikti-text2,
+.pddikti-link {
+    font-size: 11px;
+    color: rgb(63, 66, 84);
 }
 
 .pddikti-text1 {
     font-weight: 600;
-    font-size: 13px;
+    
 }
 
 .pddikti-text2 {
     font-weight: 400;
-    font-size: 13px;
 }
 
 .pddikti-link {
     margin-top: 10px;
     text-decoration: none;
-    color: rgb(0, 158, 247);
+    color: #009EF7;
     font-weight: 700;
-    font-size: 13px;
 }
