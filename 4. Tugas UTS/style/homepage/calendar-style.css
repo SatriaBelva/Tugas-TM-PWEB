@@ -1,0 +1,88 @@
+tbody{
+    width: 100%;
+}
+
+.calendar-container{
+  background-color: white;
+    border-radius: 20px;
+    padding: 26px 29px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Poppins;
+  }
+  
+  .bullet-cell {
+    width: 1%;
+    padding-top: 0;
+    vertical-align: top;
+  }
+  
+  .bullet-vertical {
+    display: inline-block;
+    width: 4px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 2px;
+    margin-right: 10px;
+  }
+  
+  .title-cell {
+    font-weight: 600;
+    color: #3f4254;
+    font-size: 13px;
+    padding: 0;
+  }
+  
+  .date-start,
+  .date-end {
+    font-weight: 600;
+    color: #7e8299;
+    font-size: 14px;
+    white-space: nowrap;
+    padding-top: 0;
+  }
+
+  .with-spacing{
+    /* margin-bottom: 20px; */
+  }
+  
+  .icon-cell {
+    width: 1%;
+    text-align: center;
+    color: #a1a5b7;
+    padding-top: 0;
+  }
+  
+  .separator-cell {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+    color: #3f4254;
+    font-size: 14px;
+  }
+  
+  .separator {
+    display: inline-block;
+    width: 100%;
+    /* border-top: 1px dashed #b5b5c3; */
+    position: relative;
+    line-height: 1;
+    font-weight: 300;
+  }
+  
+  .separator::before {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 0 5px;
+    font-size: 13px;
+  }
+  
+
+  
+
