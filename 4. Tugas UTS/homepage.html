@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="style/homepage/app-style.css">
     <link rel="stylesheet" href="style/homepage/calendar-style.css">
     <link rel="stylesheet" href="style/homepage/jadwal-style.css">
+    <link rel="stylesheet" href="style/homepage/modal-style.css">
     <title>Document</title>
+    <script src="script/script.js" defer></script>
+
 </head>
 <body style="margin: 0;">
    <nav class="navbar">
@@ -150,28 +153,28 @@
                     <div class="menu-grid">
                         <div class="menu-grid-top">
                             <!-- Menu Top Items -->
-                            <div class="app-container-menu-menus">
+                            <div class="app-container-menu-menus" onclick="openPopover(event, 'perkuliahan')">
                                 <div class="app-container-menu-icon">
                                     <img src="assets/App/profil.png" alt="Profil">
                                 </div>
                                 <div class="app-container-menu-title">Profil</div>
                             </div>
             
-                            <div class="app-container-menu-menus">
+                            <div class="app-container-menu-menus" onclick="openPopover(event, 'perkuliahan')">
                                 <div class="app-container-menu-icon">
                                     <img src="assets/App/persiapan_perkuliahan.png" alt="Persiapan Kuliah">
                                 </div>
                                 <div class="app-container-menu-title">Persiapan Kuliah</div>
                             </div>
             
-                            <div class="app-container-menu-menus">
+                            <div class="app-container-menu-menus" onclick="openPopover(event, 'perkuliahan')">
                                 <div class="app-container-menu-icon">
                                     <img src="assets/App/perkuliahan.png" alt="Perkuliahan">
                                 </div>
                                 <div class="app-container-menu-title">Perkuliahan</div>
                             </div>
             
-                            <div class="app-container-menu-menus">
+                            <div class="app-container-menu-menus" onclick="openPopover(event, 'perkuliahan')">
                                 <div class="app-container-menu-icon">
                                     <img src="assets/App/eoffice.png" alt="">
                                 </div>
@@ -181,21 +184,21 @@
             
                         <div class="menu-grid-bottom">
                             <!-- Menu Bottom Items -->
-                            <div class="app-container-menu-menus-bottom">
+                            <div class="app-container-menu-menus-bottom" onclick="openPopover(event, 'perkuliahan')">
                                 <div class="app-container-menu-icon">
                                     <img src="assets/App/kegiatan.png" alt="Kegiatan">
                                 </div>
                                 <div class="app-container-menu-title">Kegiatan</div>
                             </div>
             
-                            <div class="app-container-menu-menus-bottom">
+                            <div class="app-container-menu-menus-bottom" onclick="openPopover(event, 'perkuliahan')">
                                 <div class="app-container-menu-icon">
                                     <img src="assets/App/layanan.png" alt="Layanan">
                                 </div>
                                 <div class="app-container-menu-title">Layanan</div>
                             </div>
             
-                            <div class="app-container-menu-menus-bottom">
+                            <div class="app-container-menu-menus-bottom" onclick="openPopover(event, 'perkuliahan')">
                                 <div class="app-container-menu-icon">
                                     <img src="assets/App/hasil_studi.png" alt="Hasil Studi">
                                 </div>
@@ -415,5 +418,11 @@
             </div>
         </div>
     </div>
+    <div id="popover" class="popover" style="display: none;">
+        <a href="jadwal.html">Jadwal Kuliah</a>
+        <a href="presensi.html">Presensi</a>
+        <a href="nilai.html">Nilai Akademik</a>
+    </div>
+    <script src="script/script.js"></script>          
 </body>
 </html>
