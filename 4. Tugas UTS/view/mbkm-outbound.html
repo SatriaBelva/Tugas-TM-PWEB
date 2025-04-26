@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style\template\footer-style.css">
-    <link rel="stylesheet" href="style/template/navbar-style.css">
-    <link rel="stylesheet" href="style/mbkm/gaero-style.css">
-    <link rel="stylesheet" href="style/template/navigation-style.css">
+    <link rel="stylesheet" href="../style/template/navbar-style.css">
+    <link rel="stylesheet" href="../style/template/navigation-style.css">
+    <link rel="stylesheet" href="../style/template/footer-style.css">
+    <link rel="stylesheet" href="../style/mbkm/gaero-style.css">
+    <link rel="stylesheet" href="../style/template/modal-style.css">
+    <script src="../script/script.js" defer></script>
     <title>Document</title>
 </head>
 <body style="margin: 0;">
     <nav class="navbar">
         <div class="navbar-left">
-            <a class="navbar-title" href="homepage.html">
+            <a class="navbar-title" href="../index.html">
                 <span style="font-size: 14px; color: white;">SISTEM INFORMASI AKADEMIK</span>
                 <span style="color: #A1A5B7; font-size: 12px;">UNIVERSITAS JEMBER</span>
             </a>
-            <a href="homepage.html">
-                <img src="assets/Navbar/UNEJ.png" alt="" style="height: 70px; width: 70px;">
+            <a href="../index.html">
+                <img src="../assets/Navbar/UNEJ.png" alt="" style="height: 70px; width: 70px;">
             </a>
             <div class="navbar-mahasiswa">Mahasiswa</div>
         </div>
@@ -25,33 +27,33 @@
             <div class="navbar-right">
                 <div class="navbar-pic-container">
                     <div class="navbar-pic">
-                        <img src="assets/Navbar/magnifier.png" alt="">
+                        <img src="../assets/Navbar/magnifier.png" alt="">
                     </div>
                 </div>
                 <div class="navbar-pic-container">
                     <div class="navbar-pic">
-                        <img src="assets/Navbar/theme.png" alt="">
+                        <img src="../assets/Navbar/theme.png" alt="">
                     </div>
                 </div>
                 <div class="navbar-pic-container">
                     <div class="navbar-pic">
-                        <img src="assets/Navbar/app.png" alt="">
+                        <img src="../assets/Navbar/app.png" alt="">
                     </div>
                 </div>
                 <div class="navbar-pic-container">
                     <div class="navbar-pic">
-                        <img src="assets/Navbar/megaphone.png" alt="">
+                        <img src="../assets/Navbar/megaphone.png" alt="">
                     </div>
                 </div>
                 <div class="navbar-pic-container">
                     <div class="navbar-pic">
-                        <img src="assets/Navbar/menu.png" alt="">
+                        <img src="../assets/Navbar/menu.png" alt="">
                     </div>
                 </div>
                 <div class="navbar-user">
                     <div>
                         <div class="navbar-user-photo">
-                            <img src="assets/Navbar/Foto.png" alt="">
+                            <img src="../assets/Navbar/Foto.png" alt="">
                         </div>
                         <div class="navbar-user-info">
                             SATRIA BELVA NARARYA
@@ -67,53 +69,53 @@
 
    <div class="navigation">
     <div class="navigation-container">
-        <a href="" class="navigation-link">
+        <div href="" class="navigation-link" onclick="openPopover(event, 'innerpopover')">
             <div class="navigation-img-container">
-                <img src="assets/navigation/user.png" alt="">
+                <img src="../assets/navigation/user.png" alt="">
             </div>
             <div class="navigation-title">Profil</div>
-        </a>
-        <a href="" class="navigation-link">
+        </div>
+        <div href="" class="navigation-link" onclick="openPopover(event, 'innerpopover')">
             <div class="navigation-img-container">
-                <img src="assets/navigation/persiapan_perkuliahan.png" alt="">
+                <img src="../assets/navigation/persiapan_perkuliahan.png" alt="">
             </div>
             <div class="navigation-title">Persiapan Kuliah</div>
-        </a>
-        <a href="" class="navigation-link">
+        </div>
+        <div href="" class="navigation-link" onclick="openPopover(event, 'innerpopover')">
             <div class="navigation-img-container">
-                <img src="assets/navigation/perkuliahan.png" alt="">
+                <img src="../assets/navigation/perkuliahan.png" alt="">
             </div>
             <div class="navigation-title">Perkuliahan</div>
-        </a>
-        <a href="" class="navigation-link">
+        </div>
+        <div href="" class="navigation-link" onclick="openPopover(event, 'innerpopover')">
             <div class="navigation-img-container">
-                <img src="" alt="">
+                <img src="../" alt="">
             </div>
             <div class="navigation-title">E-Office</div>
-        </a>
-        <a href="" class="navigation-link">
+        </div>
+        <div href="" class="navigation-link" onclick="openPopover(event, 'innerpopover')">
             <div class="navigation-img-container">
-                <img src="assets/navigation/hasil_studi.png" alt="">
+                <img src="../assets/navigation/hasil_studi.png" alt="">
             </div>
-            <div class="navigation-title">Hasl Studi</div>
-        </a>
-        <a href="" class="navigation-link">
+            <div class="navigation-title">Hasil Studi</div>
+        </div>
+        <div href="" class="navigation-link" onclick="openPopover(event, 'innerpopover')">
             <div class="navigation-img-container">
-                <img src="assets/navigation/kegiatan.png" alt="">
+                <img src="../assets/navigation/kegiatan.png" alt="">
             </div>
             <div class="navigation-title">Kegiatan</div>
-        </a>
-        <a href="" class="navigation-link">
+        </div>
+        <div href="" class="navigation-link" onclick="openPopover(event, 'innerpopover')">
             <div class="navigation-img-container">
-                <img src="assets/navigation/Layanan.png" alt="">
+                <img src="../assets/navigation/Layanan.png" alt="">
             </div>
             <div class="navigation-title">Layanan</div>
-        </a>
+        </div>
     </div>
    </div>
 
    <div class="body">
-    <div class="content" style="height: 100svh;">
+    <div class="content">
         <div style="width: auto;">
             <h3>Daftar Kegiatan MBKM Outbound</h3>
             <div class="outer-container">
@@ -149,23 +151,23 @@
                         <div class="title">Magang Mandiri</div>
                         <div class="bkp">BKP: Magang/Praktik Kerja - Mandiri/Kerjasama</div>
                         <div class="detail">
-                            <div class="img-container"><img src="assets/mbkm-outbound/location.png" alt=""></div>
+                            <div class="img-container"><img src="../assets/mbkm-outbound/location.png" alt=""></div>
                             <div>PT. Telekomunisasi Selular Jember</div>
                         </div>
                         <div  class="detail">
-                            <div class="img-container"><img src="assets/mbkm-outbound/calendar.png" alt=""></div>
+                            <div class="img-container"><img src="../assets/mbkm-outbound/calendar.png" alt=""></div>
                             <div>04 Maret 2025 s.d. 30 Juni 2025</div>
                         </div>
                         <div class="detail">
-                            <div class="img-container"><img src="assets/mbkm-outbound/user.png" alt=""></div>
+                            <div class="img-container"><img src="../assets/mbkm-outbound/user.png" alt=""></div>
                             <div>Beny Prasetyo S.Kom., M.Kom</div>
                         </div>
                     </div>
                     <div class="bottom-container-right">
                         <div class="buttons">
                             <button class="btn3">Buka Detail</button>
-                            <button class="btn4"><img src="assets/mbkm-outbound/pen.png" alt=""></button>
-                            <button class="btn5"><img src="assets/mbkm-outbound/trash.png" alt=""></button>
+                            <button class="btn4"><img src="../assets/mbkm-outbound/pen.png" alt=""></button>
+                            <button class="btn5"><img src="../assets/mbkm-outbound/trash.png" alt=""></button>
                         </div>
                         <div class="btn6">3. Pelaksanaan Kegiatan</div>
                     </div>
@@ -186,5 +188,6 @@
         </div>
     </div>
    </div>
+   <div id="popover" class="popover" style="display: none;"></div>
 </body>
 </html>

@@ -21,6 +21,7 @@
     text-decoration: none;
     color: rgb(237, 237, 237);
     gap: 10px;
+    cursor: pointer;
 }
 
 .navigation-img-container{
@@ -41,4 +42,16 @@
     font-size: 12px;
     font-weight: 400;
     font-family: Poppins;
+}
+
+@media (max-width: 768px) {
+    .navigation{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation{
+        display: none;
+    }
 }

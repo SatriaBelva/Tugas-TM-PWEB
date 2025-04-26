@@ -3,15 +3,16 @@
     justify-content: center;
     background-color: #F3F6F9;
     font-family: Poppins, sans-serif;
-    padding: 30px;
+    padding: 30px 35px;
     margin: 0;
 }
 
 .content {
     width: 1255px;
     display: flex;
+    min-height: 100svh; /* min-height supaya ngisi layar penuh minimal */   
     flex-direction: column;
-    overflow-x: scroll;
+    overflow-x: visible;
 }
 
 .navbar{

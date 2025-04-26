@@ -1,3 +1,14 @@
+@keyframes popoverShow {
+    0% {
+        opacity: 0;
+        transform: translateY(10px); /* Mulai agak di bawah */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Normal posisi */
+    }
+}
+
 .popover {
     position: absolute;
     background-color: white;
@@ -6,9 +17,11 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     padding: 10px;
     z-index: 999;
-    display: flex;
+    display: none; /* Default tetap none */
     flex-direction: column;
     min-width: 150px;
+    margin-left: -10px;
+    animation: popoverShow 0.3s ease-out;
 }
 
 .popover a {

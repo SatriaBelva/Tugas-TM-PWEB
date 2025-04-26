@@ -1,0 +1,105 @@
+.container{
+  padding: 0px 200px;
+}
+
+.aqua-panel {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 16px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+    overflow: hidden;
+    /* flex: 1; */
+}
+.aqua-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e6e6e6;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+.aqua-panel-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.aqua-panel-content { padding: 20px; overflow-x: auto; }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table thead {
+    color: black;
+    font-size: 12px;
+
+  }
+  .table thead th {
+    text-align: center;
+    padding: 6px 10px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+  }
+  .table tbody td {
+    text-align: center;
+    padding: 10px 8px; /* <<< padding kiri kanannya lebih kecil */
+    border: 1px solid #ddd;
+    white-space: nowrap;
+    font-size: 11px;
+  }
+  .table tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  .table tbody tr td button {
+    font-family: Poppins;
+    font-size: 10px;
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+  }
+
+  .edit{
+    background-color: green;
+  }
+
+  .hapus{
+    background-color: red;
+  }
+
+  @media (max-width: 768px) {
+    .aqua-panel-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    #tambahwirausaha {
+      width: 100%;
+    }
+    .table thead th, .table tbody td {
+      font-size: 13px; /* kecilkan dikit */
+      padding: 8px;
+    }
+  }
+
+  /* Responsive Mobile */
+  @media (max-width: 480px) {
+    .aqua-panel-content {
+      padding: 10px;
+    }
+    .table {
+      font-size: 12px;
+    }
+    .table thead th, .table tbody td {
+      font-size: 12px;
+      padding: 6px;
+    }
+    .table thead th {
+      white-space: normal; /* biar wrap kalau panjang */
+    }
+    .table tbody td {
+      white-space: normal;
+    }
+  }

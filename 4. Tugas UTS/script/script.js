@@ -2,33 +2,34 @@ function openPopover(event, menuType) {
     const popover = document.getElementById("popover");
     const rect = event.currentTarget.getBoundingClientRect();
 
-    // Isi popover tergantung menu
     let content = "";
-    if (menuType === "perkuliahan") {
+    if (menuType === "popover") {
         content += `
-            <a href="mbkm-outbound.html">mbkm-outbound.html</a>
-            <a href="mbkm-outbound.html">Presensi</a>
-            <a href="mbkm-outbound.html">Nilai Akademik</a>
+            <a href="view/mbkm-outbound.html">MBKM Outbound</a>
+            <a href="view/wirausaha.html">Wirausaha</a>
+            <a href="view/status-kuliah.html">Status Kuliah</a>
         `;
-    } else if (menuType === "profil") {
+    }
+    else{
         content += `
-            <a href="biodata.html">Biodata</a>
-            <a href="akun.html">Akun</a>
+            <a href="mbkm-outbound.html">MBKM Outbound</a>
+            <a href="wirausaha.html">Wirausaha</a>
+            <a href="status-kuliah.html">Status Kuliah</a>
         `;
     }
 
-    // Tampilkan & posisikan popover
+    popover.style.animation = "none";
+    void popover.offsetWidth;
+    popover.style.animation = "popoverShow 0.3s ease-out";
 
     popover.innerHTML = content;
     popover.style.display = "flex";
     popover.style.top = (rect.top + window.scrollY) + "px";
     popover.style.left = (rect.right + window.scrollX + 10) + "px";
 
-
-    event.stopPropagation(); // cegah klik bubble
+    event.stopPropagation();
 }
 
-// Tutup popover saat klik di luar
 document.addEventListener("click", function () {
     const popover = document.getElementById("popover");
     if (popover) {
