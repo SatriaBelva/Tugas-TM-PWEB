@@ -5,16 +5,46 @@ function openPopover(event, menuType) {
     let content = "";
     if (menuType === "popover") {
         content += `
-            <a href="view/mbkm-outbound.html">MBKM Outbound</a>
-            <a href="view/wirausaha.html">Wirausaha</a>
-            <a href="view/status-kuliah.html">Status Kuliah</a>
-        `;
+            <a href="view/mbkm-outbound.html">
+                <div class="img-container"style="width: 18px;height: 16px;display: flex;justify-content: center;align-items: center;">
+                    <img src="assets/modal/mbkm-outbound.png" alt="" style="width: auto;height: 100%;object-fit: contain;">
+                </div>
+                <div>MBKM-Outbound</div>
+            </a>
+            <a href="view/wirausaha.html">
+                <div class="img-container"style="width: 18px;height: 16px;display: flex;justify-content: center;align-items: center;">
+                    <img src="assets/modal/wirausaha.png" alt="" style="width: auto;height: 100%;object-fit: contain;">
+                </div>
+                <div>Wirausaha</div>        
+            </a>
+            <a href="view/status-kuliah.html">
+                <div class="img-container"style="width: 18px;height: 16px;display: flex;justify-content: center;align-items: center;">
+                    <img src="assets/modal/status-kuliah.png" alt="" style="width: auto;height: 100%;object-fit: contain;">
+                </div>
+                <div>Status Kuliah</div> 
+            </a>
+        `;             
     }
-    else{
+    if((menuType === "innerpopover")){
         content += `
-            <a href="mbkm-outbound.html">MBKM Outbound</a>
-            <a href="wirausaha.html">Wirausaha</a>
-            <a href="status-kuliah.html">Status Kuliah</a>
+            <a href="mbkm-outbound.html">
+                <div class="img-container"style="width: 18px;height: 16px;display: flex;justify-content: center;align-items: center;">
+                    <img src="../assets/modal/mbkm-outbound.png" alt="" style="width: auto;height: 100%;object-fit: contain;">
+                </div>
+                <div>MBKM-Outbound</div>
+            </a>
+            <a href="wirausaha.html">
+                <div class="img-container"style="width: 18px;height: 16px;display: flex;justify-content: center;align-items: center;">
+                    <img src="../assets/modal/wirausaha.png" alt="" style="width: auto;height: 100%;object-fit: contain;">
+                </div>
+                <div>Wirausaha</div>     
+            </a>
+            <a href="status-kuliah.html">
+                <div class="img-container"style="width: 18px;height: 16px;display: flex;justify-content: center;align-items: center;">
+                    <img src="../assets/modal/status-kuliah.png" alt="" style="width: auto;height: 100%;object-fit: contain;">
+                </div>
+                <div>Status Kuliah</div> 
+            </a>
         `;
     }
 

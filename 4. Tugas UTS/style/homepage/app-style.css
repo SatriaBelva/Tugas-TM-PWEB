@@ -106,7 +106,16 @@
     background-color: white;
     padding: 40px 0 40px 8.125px;
     border-radius: 12px;
+    cursor: pointer;
 }
+
+.app-container-menu-menus:hover .app-container-menu-title{
+    color: blue;
+}
+.app-container-menu-menus-bottom:hover .app-container-menu-title {
+    color: blue;
+}
+
 
 .app-container-menu-menus {
     width: 187px;

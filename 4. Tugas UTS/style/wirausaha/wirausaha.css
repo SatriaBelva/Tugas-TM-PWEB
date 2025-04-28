@@ -80,37 +80,57 @@
     background-color: red;
   }
 
-  @media (max-width: 768px) {
+@media (max-width: 992px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+  
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
     .aqua-panel-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
     #tambahwirausaha {
-      width: 100%;
-    }
-    .table thead th, .table tbody td {
-      font-size: 13px; /* kecilkan dikit */
-      padding: 8px;
-    }
-  }
-
-  /* Responsive Mobile */
-  @media (max-width: 480px) {
-    .aqua-panel-content {
-      padding: 10px;
+        width: 100%;
     }
     .table {
-      font-size: 12px;
+        min-width: 100%;
     }
     .table thead th, .table tbody td {
-      font-size: 12px;
-      padding: 6px;
+        font-size: 13px;
+        padding: 8px;
     }
-    .table thead th {
-      white-space: normal; /* biar wrap kalau panjang */
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .table tbody td {
-      white-space: normal;
+    .footer-right {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
-  }
+}
+  
+@media (max-width: 480px) {
+    .aqua-panel-content {
+        padding: 10px;
+    }
+    .table {
+        font-size: 12px;
+    }
+    .table thead th, .table tbody td {
+        font-size: 12px;
+        padding: 6px;
+    }
+    .table thead th, .table tbody td {
+        white-space: normal;
+    }
+    .footer {
+        font-size: 12px;
+    }
+}
